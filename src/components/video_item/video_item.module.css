@@ -1,9 +1,14 @@
-.item {
+.container {
   display: flex;
   padding: 0.5rem;
-  width: 50%;
 }
 
+.grid {
+  width: 50%;
+}
+.list {
+  width: 100%;
+}
 .video {
   width: 100%;
   background-color: white;
