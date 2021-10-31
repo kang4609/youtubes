@@ -5,6 +5,7 @@ const VideoDetail = ({ video }) => {
     <>
       <section className={styles.detail}>
         <iframe
+          title="youtub video player"
           className={styles.video}
           type="text/html"
           width="100%"

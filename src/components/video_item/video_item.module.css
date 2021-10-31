@@ -1,14 +1,22 @@
 .container {
   display: flex;
-  padding: 0.5rem;
+  padding: 0.3rem;
+}
+
+.list {
+  width: 100%;
 }
 
 .grid {
   width: 50%;
 }
-.list {
-  width: 100%;
+
+@media screen and (max-width: 48rem) {
+  .grid {
+    width: 100%;
+  }
 }
+
 .video {
   width: 100%;
   background-color: white;
@@ -26,7 +34,7 @@
 }
 
 .videoContents {
-  padding: 1rem;
+  padding: 0.3rem;
 }
 
 .videoTitle {

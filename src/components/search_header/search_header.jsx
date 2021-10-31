@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import styles from './search_header.module.css';
 
-const SearchHeader = ({ onSubmit }) => {
+const SearchHeader = memo(({ onSubmit }) => {
   const inputRef = useRef();
 
   const handelSubmit = (event) => {
@@ -18,6 +18,8 @@ const SearchHeader = ({ onSubmit }) => {
       handelSubmit(event);
     }
   };
+
+  console.log('header');
   return (
     <header className={styles.header}>
       <div className={styles.log}>
@@ -45,6 +47,6 @@ const SearchHeader = ({ onSubmit }) => {
       </button>
     </header>
   );
-};
+});
 
 export default SearchHeader;
